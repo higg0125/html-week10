@@ -98,3 +98,60 @@ nav ul li{
 				        Flexbox
 ***********************************************************/
 
+nav ul{
+	/* set the containor to display:flex */
+	background-color: antiquewhite;
+	display: flex;
+	/* justfy contents tell the browser how you want the items inside the felex box to behave on the main axis */
+	justify-content: space-space space-evenly;
+}
+
+/* the div class is body flex contains the main and the aside */
+.bodyflex{
+	display: flex;
+}
+
+main{
+	width: 75%;
+}
+
+aside{
+	width: 25%;
+/* display flex is not inherited - so if you want the aside to also use flex box you have to set it */
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+aside .sidebarbox{
+	/* by default it is set to "auto", which means shrink the size of the content
+	if we give it a number, we assign a level of imprtance to the items - if they all ahve the same number they all ahve the same size importance  */
+	flex-basis: 0;
+	/* then you have to use flex grow or flex shrink to tell the boxes how you want them to grow or shrink
+	 relitvily to the space to have and to eachother  */
+	 flex-grow: 1;
+}
+
+#fish{
+	display: flex;
+	/* use flex wrap to allow the flex to wrap to the next lines or as many lines as nessary */
+	/* flex-wrap: wrap; */
+}
+
+#fish img{
+	width: 100%;
+}
+
+#rainbow{
+	/* without any other instuctions, elements with no content disapper when they are first set to display flex */
+	display: flex;
+}
+
+#rainbow div{
+	flex-basis: 0;
+	flex-grow:1;
+}
+
+#rainbow #re, #rainbow #bl{
+	/* this weill set these two divs to be twice the size of the other five relivive to the amount of space they have */
+	flex-grow: 2;
+}
