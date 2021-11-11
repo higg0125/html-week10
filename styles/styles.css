@@ -129,6 +129,11 @@ aside .sidebarbox{
 	/* then you have to use flex grow or flex shrink to tell the boxes how you want them to grow or shrink
 	 relitvily to the space to have and to eachother  */
 	 flex-grow: 1;
+	 display: flex;
+	/* justfy conent looks and the main axis */
+	justify-content: center;
+	/* align items looks at the cross axis (by defult,vertiucal or colume */
+	align-items: center;
 }
 
 #fish{
