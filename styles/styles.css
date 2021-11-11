@@ -155,3 +155,19 @@ aside .sidebarbox{
 	/* this weill set these two divs to be twice the size of the other five relivive to the amount of space they have */
 	flex-grow: 2;
 }
+
+#rainbow #gr{
+	flex-grow: 5;
+}
+
+#content{
+	/* divs with contents will try to take as much space that they need, relitve to the content of the other boxes */
+	display: flex;
+}
+
+/* flex is a short hand that combines flex-grow, flex-shrink,flex-basis (in that order)  */
+#content p:nth-child(1){ flex: 1 2 0;}
+#content p:nth-child(2){ flex: 4 1 0;}
+#content p:nth-child(3){ flex: 1 1 0;}
+#content p:nth-child(4){ flex: 3 8 0;}
+#content p:nth-child(5){ flex: 1 2 0;}
